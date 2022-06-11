@@ -1,3 +1,5 @@
+# this code is used to transfer some images from training set to test set
+
 import os
 import random
 import shutil
