@@ -1,3 +1,5 @@
+# this code is used to general xml annotations for the DeepPCB dataset
+
 import os
 
 directory = 'train'
