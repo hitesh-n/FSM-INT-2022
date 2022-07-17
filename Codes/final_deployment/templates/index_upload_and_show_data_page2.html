@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+	    body {
+  	        background-image: url("https://www.helmut-fischer.com/fileadmin/_processed_/8/2/csm_hero_pcb-automation_be65ee2f64.jpg");
+	        background-repeat: no-repeat;
+	        background-size:cover;
+	        }
+	    .white-box {
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 5%;
+            left: 25%;
+            width: 50%;
+            height: 85%;
+            }
+        .text-content {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            }
+        input[type=submit] {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+            }
+        input[type=submit]:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+    </style>
+</head>
+<body>
+    <div class="white-box">
+        <div class="text-content">
+            <h1>PCB Defect Detection</h1>
+            <img src="{{ user_image }}" alt="Italian Trulli" width="600" height="300">
+            <br>
+            <p style="color:green;">file uploaded successfully and binarized</p>
+            <form action="/show_image" target="_blank">
+            <input type="submit" value="Detect defects" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
